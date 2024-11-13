@@ -13,11 +13,12 @@
 }
 
 body {
-    background-image: url("/docs/midia/img/wallpapersden.com_ea-sports-fc-24_3840x2160.jpg");
+    /* background-image: url("/docs/midia/img/wallpapersden.com_ea-sports-fc-24_3840x2160.jpg");
     background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: black;
 }
 
 /* Estilo para o cabeçalho */
