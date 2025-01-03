@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="/docs/estilos/menu.css">
+</head>
+
+<body>
+    <header>
+        <div class="settings">
+            <div class="settings-init"><img src="/docs/midia/img/definicoes-init.png" alt="configuracoes-icon"></div>
+            <div class="settings-hover"><img src="/docs/midia/img/definicoes-hover.png" alt="configuracoes-icon"></div>
+        </div>
+        <div class="acessibility">
+            <div class="acessibility-init"><img src="/docs/midia/img/acessibilidade.png" alt="acessibilidade-icon"></div>
+
+        </div>
+        <div class="topnav-right">
+            <p id="user">Martin Lange de Assis</p>
+            <img src="/docs/midia/img/101527940.jpg" alt="foto-perfil">
+            <p id="years-experience">Level</p>
+        </div>
+        <div class="logo">
+            <h1>MLA</h1>
+        </div>
+    </header>
+    <main>
+
+        <nav class="tab">
+            <a href="paginas/portfolio.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'portfolio')">Portfólio</p>
+            </a>
+            <a href="paginas/experiencia-profissional.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'experiencia-profissional')">Experiência
+                    Profissional</p>
+            </a>
+            <a href="paginas/habilidades.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'habilidades')">Habilidades</p>
+            </a>
+            <a href="paginas/certificacoes-cursos.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'certificacoes')">Certificações</p>
+            </a>
+            <a href="paginas/meu-perfil.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'meu-perfil')">Meu perfil</p>
+            </a>
+        </nav>
+        <div id="welcome" class="tabcontent">
+            <div class="teste">
+                <h1>Olá</h1>
+                <h2>Bem-Vindo(a)!</h2>
+                <h3>Foco • Comprometimento • Determinação</h3>
+            </div>
+            <a href="https://www.linkedin.com/in/martin-lange-de-assis-4a8890237/" target="_blank">
+                <button>
+                    <div class="overlay">
+                        <div class="init_img"><img src="/docs/midia/img/logo-linkedin-white.png" alt="logo-linkedin"></div>
+                        <div class="hover_img"><img src="/docs/midia/img/linkedin-black.png" alt="logo-linkedin"></div>
+                        <p id="acesso-linkedin">Acesse meu Linkedin</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+        
+
+        <div class="descriptions">
+            <div id="portfolio" class="tabcontent">
+                <h2>Conheça meu Portfólio</h2>
+            </div>
+            <div id="experiencia-profissional" class="tabcontent">
+                <h2>Saiba minha Experiência Profissional</h2>
+            </div>
+            <div id="habilidades" class="tabcontent">
+                <h2>Descubra minhas habilidades</h2>
+            </div>
+            <div id="certificacoes" class="tabcontent">
+                <h2>Veja minhas Certificações</h2>
+            </div>
+            <div id="meu-perfil" class="tabcontent">
+                <h2>Conheça um pouco de minha história</h2>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="/docs/scripts/menu.js"></script>
+
+</html>

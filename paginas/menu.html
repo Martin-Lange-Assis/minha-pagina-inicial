@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="/estilos/menu.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minha Página</h1>
+    </header>
+    <div class="topnav-right">
+        <p id="user">SectionPlaysYT</p>
+        <p id="years-experience">Level</p>
+    </div>
+    <main>
+        <nav class="tab">
+            <a href="portfolio.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'portfolio')">Portfólio</p>
+            </a>
+            <a href="experiencia-profissional.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'experiencia-profissional')">Experiência
+                    Profissional</p>
+            </a>
+            <a href="habilidades.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'habilidades')">Habilidades</p>
+            </a>
+            <a href="certificacoes-cursos.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'certificacoes-cursos')">Certificações</p>
+            </a>
+            <a href="meu-perfil.html">
+                <p class="tablinks" onmouseover="mostrarMensagem(event, 'meu-perfil')">Meu perfil</p>
+            </a>
+        </nav>
+        <div id="welcome" class="tabcontent">
+            <h1>MLA</h1>
+            <h2>Bem-Vindo(a)!</h2>
+            <h3>Foco • Comprometimento • Determinação</h3>
+            <a href="https://www.linkedin.com/in/martin-lange-de-assis-4a8890237/" target="_blank">
+                <button>
+                    <div class="overlay">
+                        <div class="imagem-container"><img src="/midia/img/image (2) (3).png" alt="logo-linkedin"></div>
+                        <p id="acesso-linkedin">Acesse meu Linkedin</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="container">
+            <span class="overlay" id="percent"></span>
+        </div>
+        
+        <div id="portfolio" class="tabcontent">
+            <h2>Conheça meu Portfólio</h2>
+        </div>
+        <div id="experiencia-profissional" class="tabcontent">
+            <h2>Saiba minha Experiência Profissional</h2>
+        </div>
+        <div id="habilidades" class="tabcontent">
+            <h2>Descubra minhas habilidades</h2>
+        </div>
+        <div id="certificacoes-cursos" class="tabcontent">
+            <h2>Veja minhas Certificações</h2>
+        </div>
+        <div id="meu-perfil" class="tabcontent">
+            <h2>Conheça um pouco de minha história</h2>
+        </div>
+
+    </main>
+</body>
+<script src="/scripts/menu.js"></script>
+
+</html>

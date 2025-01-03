@@ -1,0 +1,333 @@
+:root {
+    --background-color: black;
+    --text-color: #B3B9B1;
+    --header-color: white;
+    --hover-color: #FFFF;
+    --font-weight: 300;
+}
+
+* {
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url("/docs/midia/img/eafc-24-europe-attackers-otw-player-pick-v0-h5tau4wikpfb1.webp");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    position: relative;
+    top: 35px;
+    color: white;
+    height: 600px;
+    width: 860px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.479);
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#losango {
+    position: relative;
+    width: 50px;
+    height: 140px;
+    right: 15px;
+    bottom: 67px;
+}
+
+#losango::after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    border-bottom: 20px solid #EB7B0F;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+#losango::before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    border-top: 20px solid #EB7B0F;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.exclamacao {
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    top: 70px;
+    left: 45px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#estado {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    width: 200px;
+    position: relative;
+    top: 53px;
+    left: 50px;
+}
+
+.box-check {
+    position: relative;
+    height: 40px;
+    bottom: 58px;
+    left: 30px;
+}
+
+.check {
+    background-color: #6EED7C;
+    width: 240px;
+    height: 40px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: relative;
+    left: 590px;
+    bottom: 124px;
+}
+
+#verificado {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding-top: 8px;
+    height: 25px;
+}
+
+hr {
+    width: 90%;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    bottom: 353px;
+}
+
+.info {
+    height: 600px;
+    position: relative;
+    bottom: 204px;
+}
+
+.info-high,
+.info-low {
+    width: 420px;
+    height: 600px;
+}
+
+.foto-perfil img {
+    display: flex;
+    width: 200px;
+    position: relative;
+    top: 55px;
+    left: 42px;
+}
+
+#xp-value {
+    color: #478777;
+    font-size: 50px;
+    font-weight: 300;
+    width: 60px;
+    position: relative;
+    left: 220px;
+    bottom: 210px;
+}
+
+.pipe-high {
+    font-weight: 200;
+    font-size: 24px;
+    width: 60px;
+    position: relative;
+    left: 250px;
+    bottom: 300px;
+}
+
+#pipe-high-son-1 {
+    font-weight: 200;
+    font-size: 18px;
+    width: 60px;
+    position: relative;
+    left: 304px;
+    bottom: 529px;
+}
+
+#pipe-high-son-2 {
+    font-weight: 200;
+    font-size: 18px;
+    width: 60px;
+    position: relative;
+    left: 475px;
+    bottom: 660px;
+}
+
+#cargo {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    width: 60px;
+    position: relative;
+    left: 290px;
+    bottom: 350px;
+}
+
+#firstName {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    bottom: 370px;
+    left: 236px;
+}
+
+#lastName {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    bottom: 446px;
+    left: 290px;
+}
+
+#idade-label {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    right: 60px;
+    bottom: 430px;
+}
+
+#idade-valor {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    right: 10px;
+    bottom: 480px;
+}
+
+
+
+.country-flag img {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 27px;
+    bottom: 380px;
+    left: 45px;
+}
+
+.altura,
+.perna-boa {
+    display: flex;
+    align-items: center;
+}
+
+#altura-label {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    left: 300px;
+    bottom: 595px;
+}
+
+#altura-valor {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    left: 170px;
+    bottom: 595px;
+}
+
+#perna-boa-label {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    left: 490px;
+    bottom: 726px;
+}
+
+#perna-boa-valor {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    position: relative;
+    width: 650px;
+    margin-right: 50px;
+    left: 352px;
+    bottom: 724px;
+}
+
+.empresa {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    width: 650px;
+    bottom: 940px;
+    left: 300px;
+}
+
+#empresa-logo {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    left: 120px;
+    top: 40px;
+}
+
+#empresa-abv {
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    position: relative;
+    width: 160px;
+    height: 80px;
+    left: 365px;
+    top: 39px;
+}
+
+#relatorio {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    width: 180px;
+    position: relative;
+    bottom: 310px;
+}

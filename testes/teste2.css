@@ -1,0 +1,85 @@
+:root {
+    --background-color: black;
+    --text-color: #B3B9B1;
+    --header-color: white;
+    --hover-color: #FFFFFF;
+    --font-weight: 300;
+}
+
+
+* {
+  background-color: var(--background-color);
+  background-image: url("/midia/img/eafc-24-europe-attackers-otw-player-pick-v0-h5tau4wikpfb1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+header>h1 {
+    color: var(--header-color);
+    font-weight: 700;
+}
+
+/* Navegação no topo */
+.topnav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.topnav-right>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#years-experience {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilo principal */
+main {
+    display: flex;
+    height: 0px;
+}
+
+/* Estilo para abas */
+.tab {
+    width: 30%;
+    height: 300px;
+}
+
+.tab a {
+    text-decoration: none;
+}
+
+.tab p {
+    display: block;
+    padding-left: 2px;
+    padding-right: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+p.tablinks {
+    width: 250px;
+    margin-top: 26px;
+    margin-left: 100px;
+}
+
+.tab p:hover {
+    color: var(--hover-color);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.tab p.active {
+    color: var(--hover-color);
+}

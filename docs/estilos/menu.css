@@ -1,0 +1,341 @@
+:root {
+    --background-color: black;
+    --text-color: #B3B9B1;
+    --header-color: white;
+    --hover-color: #FFFFFF;
+    --font-weight: 300;
+}
+
+* {
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url("/docs/midia/img/wallpapersden.com_ea-sports-fc-24_3840x2160.jpg");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para o cabeçalho */
+.logo h1{
+    color: var(--header-color);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    margin-top: 55px;
+    margin-left: 76px;
+}
+
+.settings img {
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.settings-init {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 55px;
+    margin-left: 60px;
+}
+
+.settings-hover {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 55px;
+    margin-left: 60px;
+}
+
+.settings:hover .settings-hover {
+    display: inline-block;
+}
+
+.settings:hover .settings-init {
+    display: none;
+}
+
+.acessibility {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+}
+
+.acessibility img {
+    background-color: #CCD2CB;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.acessibility-init {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 290px;
+    margin-left: 210px;
+}
+
+.acessibility:hover img{
+    background-color: #FFFFFF;
+}
+
+/* Navegação no topo */
+.topnav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.topnav-right>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.topnav-right img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 30px;
+    margin-right: 100px;
+}
+
+#user {
+    margin-right: 50px;
+}
+
+#years-experience {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 29px;
+}
+
+/* Estilo principal */
+main {
+    display: flex;
+}
+
+/* Estilo para abas */
+.tab {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 400px;
+    height: 380px;
+}
+
+.tab a {
+    text-decoration: none;
+}
+
+.tab p {
+    display: block;
+    padding-left: 2px;
+    padding-right: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+p.tablinks {
+    width: 250px;
+    margin-top: 26px;
+    margin-left: 100px;
+}
+
+.tab p:hover {
+    color: var(--hover-color);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.tab p.active {
+    color: var(--hover-color);
+}
+
+.tabcontent {
+    text-align: center;
+    margin-left: 260px;
+}
+
+/* Conteúdo das abas */
+
+.tabcontent h1 {
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0px;
+    color: var(--header-color);
+}
+
+.tabcontent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--header-color);
+}
+
+.tabcontent h3 {
+    font-size: 20px;
+    color: var(--header-color);
+}
+
+.tabcontent a {
+    text-decoration: none;
+    width: 0px;
+    height: 0px;
+    display: block;
+}
+
+.tabcontent button {
+    background-color: #b3b9b1a2;
+    border-color: transparent;
+    border-radius: 50px;
+    /* color: black;
+    font-size: 20px;
+    font-weight: 700; */
+    width: 350px;
+    height: 70px;
+    padding-right: 35px;
+    margin-top: 80px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.hover_img {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.tabcontent button:hover .hover_img {
+    display: inline-block;
+}
+
+.tabcontent button:hover .init_img {
+    display: none;
+}
+
+.init_img {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.tabcontent img {
+    background-color: transparent;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+p#acesso-linkedin {
+    font-size: 20px;
+    font-weight: 500;
+    width: 250px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+
+.tabcontent button>.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* width: 370px;
+    height: 65px; */
+    font-size: 40px;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+/*TESTE*/
+
+.tabcontent button:hover {
+    background-color: white;
+}
+
+.tabcontent button:hover p#acesso-linkedin {
+    background-color: transparent;
+    color: black;
+}
+
+#portfolio {
+    margin-top: 215px;
+    margin-left: 240px;
+}
+
+#experiencia-profissional {
+    margin-top: 215px;
+    margin-left: 80px;
+}
+
+#habilidades {
+    margin-top: 215px;
+    margin-left: 183px;
+}
+
+#certificacoes {
+    margin-top: 215px;
+    margin-left: 190px;
+}
+
+#certificacoes {
+    margin-top: 215px;
+    margin-left: 190px;
+}
+
+#meu-perfil {
+    margin-top: 215px;
+    margin-left: 60px;
+}

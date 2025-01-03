@@ -1,0 +1,346 @@
+:root {
+    --background-color: black;
+    --text-color: #B3B9B1;
+    --header-color: white;
+    --hover-color: #FFFF;
+    --font-weight: 300;
+}
+
+* {
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url("/docs/midia/img/eafc-24-europe-attackers-otw-player-pick-v0-h5tau4wikpfb1.webp");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* .slideshow-container-home {
+    background-color: #B3B9B1;
+} */
+
+.logo{
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 55px;
+}
+
+.logo h2{
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+#title-select-company{
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+#title-pipe{
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 35px;
+}
+
+.home {
+    
+    font-weight: 900;
+    font-size: 70px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    /* Rotaciona o texto em 90 graus */
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 45px;
+}
+
+.container-away {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha o conteúdo à direita */
+}
+
+.away {
+    font-weight: 900;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    /* Rotaciona o texto em 90 graus */
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 45px;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.slideshow-container-home,
+.slideshow-container-away {
+    flex: 1;
+    z-index: 1;
+}
+
+.slideshow-container-home {
+    text-align: center;
+    width: 300px;
+    margin-left: 260px;
+}
+
+.slideshow-container-away {
+    text-align: center;
+    margin-left: 90px;
+}
+
+/* COUNTRY */
+
+.country {
+    font-weight: 600;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 510px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.container-country {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Adiciona posicionamento relativo ao contêiner */
+}
+
+.arrow-country {
+    font-size: 24px;
+    margin: 0 180px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.country-selected {
+    position: relative;
+}
+
+.country-selected p {
+    margin: 0;
+    color: #FFF;
+    font-size: 22px;
+    white-space: nowrap;
+    /* Evita quebra de linha */
+    position: relative;
+    right: 55px;
+    bottom: 5px;
+}
+
+.container-country img {
+    position: absolute;
+    display: inline-block;
+    margin-left: 290px;
+    width: 90px;
+    height: 60px;
+}
+
+.country:hover {
+    background-color: var(--hover-color);
+}
+
+.country:hover p {
+    color: black;
+}
+
+.country:hover .arrow-country {
+    color: black;
+}
+
+/* COMPANY */
+
+.company {
+    font-weight: 600;
+    height: 465px;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 510px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.container-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Adiciona posicionamento relativo ao contêiner */
+}
+
+.arrow-company {
+    font-size: 24px;
+    margin: 5px 125px;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: 210px;
+    right: 48px;
+    z-index: 1;
+}
+
+.company-selected {
+    position: relative;
+}
+
+.company-selected p {
+    margin: 0;
+    color: #FFF;
+    font-size: 30px;
+    white-space: nowrap;
+    /* Evita quebra de linha */
+    position: relative;
+    /* right: 55px;
+    bottom: 5px; */
+    left: 260px;
+}
+
+.container-company img {
+    position: absolute;
+    display: inline-block;
+    top: 170px;
+    width: 200px;
+    height: 100px;
+}
+
+.company:hover {
+    background-color: var(--hover-color);
+}
+
+.company:hover p {
+    color: black;
+}
+
+.company:hover .arrow-company {
+    color: black;
+}
+
+/* STATE CITY */
+
+.state-city {
+    font-weight: 600;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 510px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.container-state-city {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Adiciona posicionamento relativo ao contêiner */
+}
+
+.arrow-state-city {
+    font-size: 24px;
+    margin: 5px 205px;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: 17px;
+    right: 80px;
+}
+
+.state-city-selected {
+    position: relative;
+}
+
+.state-city-selected p {
+    margin: 0;
+    color: #FFF;
+    font-size: 22px;
+    white-space: nowrap;
+    /* Evita quebra de linha */
+    position: relative;
+    /* right: 55px;
+    bottom: 5px; */
+    bottom: 25px;
+    left: 415px;
+}
+
+.container-state-city img {
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    top: 50px;
+}
+
+.state-city:hover {
+    background-color: var(--hover-color);
+}
+
+.state-city:hover p {
+    color: black;
+}
+
+.state-city:hover .arrow-state-city {
+    color: black;
+}
+
+/* TESTE */
+
+/* .prev-country {
+    cursor: pointer;
+    color: black;
+    margin-right: 380px;
+}
+
+.next-country {
+    cursor: pointer;
+    color: black;
+} */
+
+/* .prev, .next {
+    cursor: pointer;
+    padding: 40px;
+    margin-top: 100px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* .next{
+    cursor: pointer;
+
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+    color: rgba(0, 0, 0, 0.8);
+} */
