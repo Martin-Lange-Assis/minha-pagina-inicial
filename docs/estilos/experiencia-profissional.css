@@ -12,6 +12,7 @@
 }
 
 body {
+    background-color: var(--background-color);
     background-image: url("/docs/midia/img/eafc-24-europe-attackers-otw-player-pick-v0-h5tau4wikpfb1.webp");
     background-size: cover;
     background-size: cover;
