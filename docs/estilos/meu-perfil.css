@@ -4,6 +4,11 @@
     --header-color: white;
     --hover-color: #FFFF;
     --font-weight: 300;
+    --veryBadOvr: #E03131;
+    --badOvr: #FD7E14;
+    --mediumOvr: #FCC419;
+    --goodOvr: #66A80F;
+    --veryGoodOvr: #2B8A3E;
 }
 
 * {
@@ -24,6 +29,11 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .card {
@@ -320,11 +330,86 @@ hr {
     top: 39px;
 }
 
+.info-low {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    top: 280px;
+    width: 50%;
+}
+
 #relatorio {
     color: white;
     font-size: 20px;
     font-weight: 500;
     width: 180px;
     position: relative;
-    bottom: 310px;
+}
+
+
+/* Estilo para o contêiner da tabela */
+.tabela-container {
+    width: 50%;
+    /* Largura do contêiner */
+    max-height: 215px;
+    /* Altura máxima do contêiner */
+    position: absolute;
+    top: 325px;
+    left: 40px;
+}
+
+.info-low-table {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remover espaçamento entre células */
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+#nota1,
+#nota2,
+#nota3,
+#nota4,
+#nota5,
+#nota6,
+#nota7 {
+    font-weight: 600;
+}
+
+.container-losango-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+    position: absolute;
+    bottom: 100px;
+    left: 485px;
+    max-width: 50%;
+}
+
+.diamond {
+    width: 50px;
+    height: 50px;
+    background-color: #D9CDDC;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.diamond img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg);
 }
