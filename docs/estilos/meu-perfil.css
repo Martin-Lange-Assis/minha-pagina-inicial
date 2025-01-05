@@ -12,8 +12,7 @@
 }
 
 body {
-    background-color: var(--background-color);
-    /* background-image: url("docs/midia/img/eafc-24-europe-attackers-otw-player-pick-v0-h5tau4wikpfb1.webp"); */
+    background-image: url("../midia/img/fundo-meu-perfil-provisorio.jpg");
     background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,7 +36,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.479);
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     text-align: center;
 }
 
@@ -127,8 +126,7 @@ hr {
     bottom: 204px;
 }
 
-.info-high,
-.info-low {
+.info-high {
     width: 420px;
     height: 600px;
 }
@@ -233,8 +231,6 @@ hr {
     right: 10px;
     bottom: 480px;
 }
-
-
 
 .country-flag img {
     position: relative;
