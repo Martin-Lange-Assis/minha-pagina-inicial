@@ -1,0 +1,100 @@
+:root {
+    --background-color: black;
+    --text-color: #B3B9B1;
+    --header-color: white;
+    --hover-color: #FFFFFF;
+    --font-weight: 300;
+}
+
+* {
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    /* background-color: var(--background-color); */
+    background-image: url("../midia/img/fundo-menu-provisiorio.jpg");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card {
+    display: inline-flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 490px;
+    height: 405px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.card:hover .container>h1>b {
+    color: #181A19;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+b {
+    text-decoration: none;
+}
+
+.auxcreche {
+    display: flex;
+    position: absolute;
+    border-radius: 50px;
+    background-color: transparent;
+
+}
+
+.auxcreche img {
+    background-color: transparent;
+    width: 120px;
+}
+
+.auxcreche-init {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 165px;
+    margin-left: 330px;
+}
+
+.auxcreche-hover {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 165px;
+    margin-left: 330px;
+}
+
+.card:hover .auxcreche-init {
+    display: none;
+}
+
+.card:hover .auxcreche-hover {
+    display: inline-block;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    gap: 10px;
+}
